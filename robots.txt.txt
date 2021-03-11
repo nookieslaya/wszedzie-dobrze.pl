@@ -1,0 +1,2 @@
+user-afent: *
+http://www.wszedzie-dobrze.com/sitemap.xml
