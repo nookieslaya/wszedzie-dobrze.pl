@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pl">
 
 <head>
   <meta charset="UTF-8">
@@ -7,22 +8,25 @@
   <meta name="description"
     content="Pomogę zachować ważne dla Ciebie chwile na fotografii,
   a także zorganizować niezapomniane przyjęcie - urodziny, wieczór panieński, baby shower etc., które wywoła mnóstwo pięknych emocji. Na co dzień jestem w Kielcach, ale bez problemu wszędzie dojadę.">
+  <link rel="shortcut icon" href="./dist/img/FINALNE Pudrowy.png">
+  <meta property="og:url" content="https://wszedzie-dobrze.pl/" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:title"
+    content="Naturalna i pełna uczuć - fotografia i organizacja eventów Kielce, Świętokrzyskie" />
+  <meta property="og:description"
+    content="Naturalna i pełna uczuć - fotografia i organizacja eventów Kielce, Świętokrzyskie" />
+  <meta property="og:image" content="https://wszedzie-dobrze.pl/thumbnail.jpg" />
+
+
   <title>Wszędzie dobrze - fotografia i organizowanie eventów Kielce, Świętokrzyskie</title>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Spartan:wght@200;400&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/341f5cf1c8.js" crossorigin="anonymous"></script>
 
 
-  <link rel="stylesheet" href="./dist/css/grid-gallery.min.css">
-  <link rel="stylesheet" href="./dist/css/sal.min.css">
+  <link rel="stylesheet" href="./dist/css/grid -gallery.min.css">
   <link rel="stylesheet" href="./dist/css/style.min.css">
   <link rel="stylesheet" media="screen and (min-width:576px)" href="./dist/css/small.min.css">
   <link rel="stylesheet" media="screen and (min-width:768px)" href="./dist/css/medium.min.css">
@@ -209,13 +213,40 @@
         </div>
       </div>
     </section>
+    <!-- <a class="portfolio-btn" href="./html/portfolio.html"><span>Portfolio</span></a> -->
+    </section>
     <section class="invite">
       <h1 class="section-name">Zapraszam także na moje media społecznościowe!</h1>
-      <p class="invite-info">W razie jakichkolwiek pytań zapraszam do kontaktu. <br><br>Jeśli potrzebujesz strony WWW
-        napisz do mnie. </p>
-      <!-- <a class="portfolio-btn" href="./html/portfolio.html"><span>Portfolio</span></a> -->
-    </section>
+      <p class="invite-info">W razie jakichkolwiek pytań zapraszam do kontaktu.</p>
   </main>
+  <!-- <section class="wrapper form-wrapper"> -->
+  <form class="form" id="contactForm" method="post" action="mail.php">
+    <div class="form-row">
+      <label for="name">Imię (min. 3 znaki)*</label>
+      <input type="text" name="name" required pattern=.{3,} id="name" data-error-text="Wypełnij to pole">
+    </div>
+    <div class="form-row">
+      <label for="email">Email*</label>
+      <input type="email" name="email" required id="email" data-error-text="Wpisz poprawny email">
+    </div>
+    <div class="form-row">
+      <label for="message">Wiadomość*</label>
+      <textarea name="message" required data-error-text="Musisz wypełnić pole" id="message"></textarea>
+    </div>
+    <div class="form-row">
+      <span class="form-row honey-row">
+        <label for="honey">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
+        <input type="text" name="honey">
+      </span>
+      <button type="submit" class="submit-btn">
+        Wyślij
+      </button>
+    </div>
+  </form>
+  <p class="invite-info">Jeśli potrzebujesz strony WWW
+    napisz do mnie. </p>
+  <!-- </section> -->
+
   <footer class="footer">
     <section id="contact">
       <div class="footer-container wrapper">
@@ -240,13 +271,8 @@
     </section>
   </footer>
 
-
-  <script src="./dist/js/sal.js"></script>
   <script src="./dist/js/grid-gallery.min.js"></script>
   <script src="./dist/js/script.min.js"></script>
-
-
-
 
 
 </body>
